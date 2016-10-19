@@ -10,13 +10,6 @@ This is a C implementation of the algorithm described in the following paper:
 An earlier version of the paper is available [on arXiv](http://front.math.ucdavis.edu/1508.05803).
 
 
-## Compilation
-You can compile the C source code by using the provided makefile:
-
-```
-$ make
-```
-
 ## Contact 
 
 Any questions can be directed to Felipe Llinares-López: felipe.llinares [at] bsse.ethz.ch  
