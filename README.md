@@ -1,6 +1,6 @@
 # facs
 
-**F**ast **A**utomatic **C**ombination **S**earch
+**F**ast **A**utomatic **C**onditional **S**earch
 
 This is a C implementation of the algorithm described in the following paper:
 
