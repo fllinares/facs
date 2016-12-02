@@ -7,11 +7,14 @@ This is a C implementation of the algorithm described in the following paper:
 + L. Papaxanthos\*, F. Llinares-López\*, D. Bodenham and K. Borgwardt (2016)
 **Finding significant combinations of features in the presence of categorical covariates**, *NIPS 2016*
 
-The paper can be found [here](http://papers.nips.cc/paper/6345-finding-significant-combinations-of-features-in-the-presence-of-categorical-covariates).
+The paper can be found [here](http://papers.nips.cc/paper/6345-finding-significant-combinations-of-features-in-the-presence-of-categorical-covariates). 
+
+A short spotlight video summarising the main aspects of the paper can be found [here](https://www.youtube.com/watch?v=_E6VsjvxVdA).
 
 ## Compilation
 It is possible to compile the C source code by using the provided makefile:
 ```
+$ cd ./facs
 $ make
 ```
 By default, the code will be compiled using ```gcc``` and the resulting executable files will be stored in the folder compiled. If available, using Intel's ```icc``` instead of ```gcc``` might lead to improved performance.
