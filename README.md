@@ -64,6 +64,8 @@ Upon execution, the folder output_tictactoe will now contain four output files:
 + The *significant itemsets file*, specified with option ```-s```, contains all feature combinations found by FACS to be significantly associated with the class labels given the categorical covariate. Each row of the file corresponds to a different significant feature combination. The first entry of the row is the p-value of the CMH test for the feature combination; all remaining entries are the indices of the features in the combination. Note that feature indices will not be necessarily ordered.
 + The *testable itemsets file*, specified with option ```-d```, contains the CMH test p-values of all testable feature combinations, include those not deemed significant. While this is useful for certain purposes (e.g. to evaluate inflation due to confounding) the resulting file can be rather large. Therefore, we recommend not using the option unless necessary.
 
+## Baselines
+
 By default, the provided makefile will also compile the different baseline algorithms described in our paper. The corresponding executables are:
 
 + **facs_2k** and **facs_Mk**: The executables for two baseline versions of FACS that do **not** use our novel approach to compute the minimum attainable p-value lower envelope. While the computational complexity of FACS scales as O(k log(k)), the naive baseline implementations in eclat_lamp_cmh_2k and eclat_lamp_cmh_Mk scale as O(2^k) and O(m^k), m >> 2, respectively.
