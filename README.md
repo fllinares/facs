@@ -77,7 +77,7 @@ By default, the provided makefile will also compile the different baseline algor
 
 ## Contact 
 
-Any questions can be directed to Felipe Llinares-López: felipe.llinares [at] bsse.ethz.ch  
+Any questions can be directed to Laetitia Papaxanthos or Felipe Llinares-López: {laetitia.papaxanthos, felipe.llinares} [at] bsse.ethz.ch  
 
 
 
