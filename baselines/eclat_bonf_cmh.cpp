@@ -302,6 +302,7 @@ int read_covariates_file(const string filename){
 void output_itemset(double pval, int a, vector<int> &x_t, vector<int> &iset, vector<int> &pexs){
 	sig_itemsets_file << pval << '\t' << a << '\t';
 	for(auto x : x_t) sig_itemsets_file << x << '\t';
+	sig_itemsets_file << '|' << '\t';
 	for(int i=0; i < iset.size()-1; ++i) sig_itemsets_file << item_label_map[iset[i]] << '\t';
 	if(pexs.size() > 0){
 		sig_itemsets_file << item_label_map[iset[iset.size()-1]] << '\t';
@@ -406,7 +407,7 @@ int depth(Database &db, vector<int> &iset, vector<int> &pexs, vector< vector<boo
 			n_enumerated_closed++; // Increase count of enumerated closed itemsets
 			if(compute_pvals){
 				// Compute cell-count
-				a = 0;
+				a = 0; // how many times trans with this element had label 1
 				for(auto trans_idx : db.transactions[k]) if(labels[trans_idx]) a++;
 				pval = compute_pval(a, db.supports[k]);
 				//TODO: This step is greedy. In pathological cases, some significant itemsets could be lost...
