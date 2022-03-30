@@ -64,7 +64,7 @@ Upon execution, the folder output_tictactoe will now contain four output files:
 
 + The *summary file*, specified with option ```-o```, displays general information, such as dataset size, resulting Tarone's testability threshold, the corrected significance threshold and the total number of significantly associated feature combinations found in the data, among others.
 + The *profiling file*, specified with option ```-p```, displays the total runtime and memory usage of the execution of FACS, as well as a breakdown of the runtime for different key steps of the algorithm.
-+ The *significant itemsets file*, specified with option ```-s```, contains all feature combinations found by FACS to be significantly associated with the class labels given the categorical covariate. Each row of the file corresponds to a different significant feature combination. The first entry of the row is the p-value of the CMH test for the feature combination; all remaining entries are the indices of the features in the combination. Note that feature indices will not be necessarily ordered.
++ The *significant itemsets file*, specified with option ```-s```, contains all feature combinations found by FACS to be significantly associated with the class labels given the categorical covariate. Each row of the file corresponds to a different significant feature combination. The first entry of the row is the p-value of the CMH test for the feature combination; then goes support values; after the pipe separator the remaining entries are the indices of the features in the combination. Note that feature indices will not be necessarily ordered.
 + The *testable itemsets file*, specified with option ```-d```, contains the CMH test p-values of all testable feature combinations, include those not deemed significant. While this is useful for certain purposes (e.g. to evaluate inflation due to confounding) the resulting file can be rather large. Therefore, we recommend not using the option unless necessary.
 
 ## Baselines
@@ -77,7 +77,7 @@ By default, the provided makefile will also compile the different baseline algor
 
 ## Contact 
 
-Any questions can be directed to Laetitia Papaxanthos or Felipe Llinares-López: {laetitia.papaxanthos, felipe.llinares} [at] bsse.ethz.ch  
+Any questions can be directed to Laetitia Papaxanthos or Felipe Llinares-López: ~~{laetitia.papaxanthos, felipe.llinares} [at] bsse.ethz.ch~~ (obsolete)
 
 
 
